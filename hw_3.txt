@@ -1,0 +1,194 @@
+2026-11-21 23:31:30,476 listening port=8000 storage=sqlite
+2026-11-21 23:31:36,811 http 172.17.0.1 "GET / HTTP/1.1" 200 -
+2026-11-21 23:31:43,062 http 172.17.0.1 "POST /increment HTTP/1.1" 200 -
+app-1  | 2026-11-21 23:38:11,081 listening port=8000 storage=sqlite
+app-1  | 2026-11-21 23:38:34,479 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1  | 2026-11-21 23:38:46,106 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
+app-1  | 2026-11-21 23:39:30,566 listening port=8000 storage=sqlite
+app-1  | 2026-11-21 23:39:39,403 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:10,495 listening port=8000 storage=redis
+app-1    | 2026-11-21 23:49:12,472 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:14,539 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:16,606 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:16,987 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+redis-1  | 1:C 21 Nov 2026 23:49:07.838 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 21 Nov 2026 23:49:07.838 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 21 Nov 2026 23:49:07.838 * Configuration loaded
+redis-1  | 1:M 21 Nov 2026 23:49:07.838 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 21 Nov 2026 23:49:07.838 * Running mode=standalone, port=6379.
+redis-1  | 1:M 21 Nov 2026 23:49:07.838 * Server initialized
+redis-1  | 1:M 21 Nov 2026 23:49:07.839 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+app-1    | 2026-11-21 23:49:18,673 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:20,741 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:M 21 Nov 2026 23:49:07.840 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 21 Nov 2026 23:49:07.840 * Ready to accept connections tcp
+app-1    | 2026-11-21 23:49:22,807 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:24,875 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:26,940 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:27,015 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:29,006 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:31,068 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:33,138 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:35,204 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:37,271 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:39,336 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:40,469 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:41,403 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:43,472 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:45,538 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:47,603 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:49,672 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:51,740 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:53,806 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:55,872 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:49:57,939 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:00,005 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:02,068 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:04,133 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:06,195 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:08,261 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:C 21 Nov 2026 23:50:33.895 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 21 Nov 2026 23:50:33.895 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 21 Nov 2026 23:50:33.895 * Configuration loaded
+redis-1  | 1:M 21 Nov 2026 23:50:33.895 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * Running mode=standalone, port=6379.
+app-1    | 2026-11-21 23:50:36,546 listening port=8000 storage=redis
+app-1    | 2026-11-21 23:50:38,529 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:40,593 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:42,650 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:44,717 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:46,784 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:48,848 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:50,914 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:52,619 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:52,980 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * Server initialized
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * Reading RDB base file on AOF loading...
+app-1    | 2026-11-21 23:50:55,051 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:57,121 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:50:59,194 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:51:01,263 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:51:03,313 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * RDB age 86 seconds
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * RDB memory usage when created 0.94 Mb
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * RDB is base AOF
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 21 Nov 2026 23:50:33.896 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+app-1    | 2026-11-21 23:51:05,473 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:05,473 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:07,552 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:07,552 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:09,623 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:09,623 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:11,694 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:11,694 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:13,764 storage_unavailable: ConnectionError
+redis-1  | 1:M 21 Nov 2026 23:50:33.897 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 21 Nov 2026 23:50:33.897 * DB loaded from append only file: 0.001 seconds
+app-1    | 2026-11-21 23:51:13,765 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:15,835 storage_unavailable: ConnectionError
+redis-1  | 1:M 21 Nov 2026 23:50:33.897 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 21 Nov 2026 23:50:33.897 * Ready to accept connections tcp
+redis-1  | 1:signal-handler (1795305063) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 21 Nov 2026 23:51:03.386 * User requested shutdown...
+redis-1  | 1:M 21 Nov 2026 23:51:03.386 * Calling fsync() on the AOF file.
+app-1    | 2026-11-21 23:51:15,835 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:17,905 storage_unavailable: ConnectionError
+redis-1  | 1:M 21 Nov 2026 23:51:03.387 * Saving the final RDB snapshot before exiting.
+redis-1  | 1:M 21 Nov 2026 23:51:03.387 * DB saved on disk
+app-1    | 2026-11-21 23:51:17,905 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:19,974 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:19,974 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:22,046 storage_unavailable: ConnectionError
+redis-1  | 1:M 21 Nov 2026 23:51:03.387 # Redis is now ready to exit, bye bye...
+redis-1  | 1:C 21 Nov 2026 23:52:14.770 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 21 Nov 2026 23:52:14.770 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 21 Nov 2026 23:52:14.770 * Configuration loaded
+redis-1  | 1:M 21 Nov 2026 23:52:14.770 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Running mode=standalone, port=6379.
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Server initialized
+app-1    | 2026-11-21 23:51:22,046 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:24,117 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:24,117 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:26,189 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:26,189 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * RDB age 187 seconds
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * RDB memory usage when created 0.94 Mb
+app-1    | 2026-11-21 23:51:28,260 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:28,260 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:30,330 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:30,330 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:32,400 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:32,400 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * RDB is base AOF
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+app-1    | 2026-11-21 23:51:34,472 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:34,472 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * DB loaded from append only file: 0.000 seconds
+app-1    | 2026-11-21 23:51:36,543 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:36,543 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:38,615 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:38,615 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:40,684 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:40,684 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:42,754 storage_unavailable: ConnectionError
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 21 Nov 2026 23:52:14.771 * Ready to accept connections tcp
+app-1    | 2026-11-21 23:51:42,755 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:44,827 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:44,827 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:46,897 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:46,897 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:48,967 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:48,967 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:51,038 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:51,038 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:51,752 http 172.18.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:51:53,108 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:53,108 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:55,179 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:55,179 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:57,250 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:57,250 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:59,238 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:59,238 http 172.18.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:51:59,320 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:51:59,320 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:01,393 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:01,393 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:03,462 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:03,463 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:05,535 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:05,536 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:07,609 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:07,609 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:07,933 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:07,933 http 172.18.0.1 "POST /increment HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:09,680 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:09,680 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:11,750 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:11,750 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:13,822 storage_unavailable: ConnectionError
+app-1    | 2026-11-21 23:52:13,822 http 127.0.0.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-21 23:52:15,891 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:17,952 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:20,016 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:22,086 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:22,111 http 172.18.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:24,153 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:26,217 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:28,281 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:29,047 http 172.18.0.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:30,347 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:32,415 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:34,483 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:35,509 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:36,548 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:38,614 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:40,679 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-21 23:52:42,741 http 127.0.0.1 "GET /readyz HTTP/1.1" 200 -
